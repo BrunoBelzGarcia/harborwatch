@@ -1,0 +1,7 @@
+*.csv
+*.evtx
+security_log*
+.env
+.env.*
+.ipynb_checkpoints/
+__pycache__/
