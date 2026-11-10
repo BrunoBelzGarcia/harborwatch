@@ -4,8 +4,8 @@ Generated: 2026-11-10T12:49-06:00
 Model: qwen3-coder-next
 Events assessed: 20
 
-Scope: sample of exported security events, not the entire computer.
-AI labels are preliminary. Verify findings against original events.
+Scope: a sample of exported Windows Security events.
+The labels and explanations below are Qwen responses. Check them against the original events before drawing conclusions.
 
 ## Classification counts
 
@@ -14,7 +14,7 @@ AI labels are preliminary. Verify findings against original events.
 - MALICIOUS: 0
 - UNKNOWN: 0
 
-## Event assessments
+## Qwen responses
 
 - Event 1: **BENIGN** — This event records a legitimate system logon with elevated privileges by the SYSTEM account, consistent with normal Windows operation.
 - Event 2: **BENIGN** — This is a routine Windows audit success logon event (Event ID 4624) showing a SYSTEM account logon via services.exe with logon type 5 (service), which is normal system behavior.
@@ -39,8 +39,8 @@ AI labels are preliminary. Verify findings against original events.
 
 ## Limitations
 
-Isolated events lack context. Temperature 1.0 and top_p 0.95 may produce different results between runs. UNKNOWN marks invalid model output and requires manual review. Raw events are omitted.
+The sample does not show the full context of each event. Temperature 1.0 and top_p 0.95 can produce different results on another run. UNKNOWN means a response failed format checks and needs review. Raw log entries are omitted.
 
 ## Review of model claims
 
-The CSV contains event IDs, timestamps, source, keywords, and task categories without full event descriptions. Claims about SYSTEM accounts, services.exe, logon type 5, or user authorization are unsupported by these input fields. BENIGN labels remain preliminary; audit success alone does not establish authorization. Check original Event Viewer details and surrounding activity.
+The CSV contains event IDs, timestamps, source, keywords, and task categories, but no full event descriptions. It does not establish which account or process was involved, the logon type, or whether an action was authorized. Claims about SYSTEM, services.exe, and logon type 5 are unsupported. Check the original events and surrounding activity before accepting the labels.
