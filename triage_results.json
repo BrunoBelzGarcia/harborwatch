@@ -153,7 +153,7 @@
     "line": "Jul 25 08:19:02 web01 useradd[5720]: new user: name=svc_backdoor, UID=0, GID=0, home=/home/svc, shell=/bin/bash",
     "label": "MALICIOUS",
     "severity": 5,
-    "reason": "A user named 'svc_backdoor' was created with UID=0 and GID=0, which grants root-level privileges-this is a strong indicator of unauthorized privilege escalation or backdoor installation."
+    "reason": "A user named 'svc_backdoor' was created with UID=0 and GID=0, which grants root-level privileges—this is a strong indicator of unauthorized privilege escalation or backdoor installation."
   },
   {
     "line": "Jul 25 08:19:37 web01 sshd[9983]: Failed password for user from 192.0.2.185 port 48055 ssh2",
@@ -1017,7 +1017,7 @@
     "line": "Jul 25 09:55:27 web01 useradd[8975]: new user: name=svc_backdoor, UID=0, GID=0, home=/home/svc, shell=/bin/bash",
     "label": "MALICIOUS",
     "severity": 5,
-    "reason": "A user named 'svc_backdoor' was created with UID=0 and GID=0, which grants root-level privileges-this strongly indicates an attempt to establish unauthorized persistent access."
+    "reason": "A user named 'svc_backdoor' was created with UID=0 and GID=0, which grants root-level privileges—this strongly indicates an attempt to establish unauthorized persistent access."
   },
   {
     "line": "Jul 25 09:56:15 web01 sshd[9822]: Invalid user postgres from 203.0.113.80 port 62129",
