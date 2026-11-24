@@ -1,0 +1,9 @@
+title: "Creation of Root User Account via useradd"
+logsource:
+  category: linux
+  service: auth
+detection:
+  selection:
+    program: 'useradd'
+    message: 'new user: name=svc_backdoor, UID=0, GID=0'
+  condition: selection
